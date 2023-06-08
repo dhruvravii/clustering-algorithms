@@ -12,15 +12,7 @@ uploaded = files.upload()
 df=pd.read_csv('Salary Data.csv')
 x = df["YearsExperience"].to_numpy()
 y = df["Salary"].to_numpy()
-{
-        "cell_type": "code",
-        "metadata": {
-         "id": "e2769b9e0005"
-       },
-        "source": [
-          "!pip install git+https://github.com/google/starthinker\n"
-        ]
-      },
+
 print(x)
 print(y)
 x_ = x.reshape(-1, 1)
@@ -40,12 +32,3 @@ plt.scatter(x_class2, y_class2, color='green', label='Class 1', s=5)
 
 plt.show()
 
-{
-        "cell_type": "code",
-        "metadata": {
-         "id": "e2769b9e0005"
-       },
-        "source": [
-          "!pip install git+https://github.com/google/starthinker\n"
-        ]
-      },
