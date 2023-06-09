@@ -9,7 +9,7 @@ import pandas as pd
 
 from google.colab import files
  
- 
+#for google colab 
 uploaded = files.upload()
 df=pd.read_csv('Coldplay.csv')
 
@@ -67,6 +67,10 @@ print(labels)
 for i in range(len(x_train)):
 #   print(labels[i])
    plt.scatter(x_train[i][6], i, marker = m[i], c=colors[labels[i]])
+l_m = [Line2D([0], [0], marker = i, color = 'black', linewidth = 0.1) for i in mks]
+labels = ["Music Of The Spheres", "Everyday Life", "A Head Full Of Dreams", "Ghost Stories","Mylo Xyloto","X&Y", "Viva La Vida or Death and All His Friends", "Viva La Vida (Prospekt's March Edition)", "A Rush of Blood to the Head","Parachutes"]
+plt.xlabel(newdf2.columns.values.tolist()[4])
 
+plt.legend(l_m, labels, bbox_to_anchor =(1, 1))
 
 plt.show()
