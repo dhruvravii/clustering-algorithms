@@ -16,6 +16,7 @@ y = df["Salary"].to_numpy()
 print(x)
 print(y)
 x_ = x.reshape(-1, 1)
+
 print(x_)
 kmeans_model = KMeans(n_clusters=3, n_init = "auto").fit(x_)
 print(kmeans_model.labels_)
